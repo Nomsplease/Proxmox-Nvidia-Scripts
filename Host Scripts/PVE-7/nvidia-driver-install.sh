@@ -19,6 +19,7 @@ fi
 
 if [ ! -f /etc/modprobe.d/blacklist.conf ]; then
     echo -e "${GRN}Disabling nouveau driver...${NC}"
+    rmmod nouveau
     echo -e "${GRN}Writing Nouveau to blacklist...${NC}"
     echo "blacklist nouveau" >> /etc/modprobe.d/blacklist.conf
 else
