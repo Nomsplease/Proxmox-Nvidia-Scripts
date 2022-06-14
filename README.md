@@ -5,4 +5,4 @@ Direct run host command
 ```curl -s https://github.com/Nomsplease/Proxmox-Nvidia-Scripts/blob/main/Host%20Scripts/PVE-7/nvidia-driver-install.sh | bash```
 
 Direct run LXC command
-```curl -s https://raw.githubusercontent.com/Nomsplease/Proxmox-Nvidia-Scripts/main/LXC%20Scripts/LXC-Installer.sh | bash```
+```apt install curl -y && curl -s https://raw.githubusercontent.com/Nomsplease/Proxmox-Nvidia-Scripts/main/LXC%20Scripts/LXC-Installer.sh | bash```
