@@ -13,8 +13,8 @@ apt install pve-headers-$(uname -r) \
     make
 
 #Make our Storage Area
-if [ ! -d ${DATA_DIR}"/NVIDIA-"${NV_VERSION} ]; then
-    mkdir ${DATA_DIR}"/NVIDIA-"${NV_VERSION}
+if [ ! -d ${DATA_DIR}/NVIDIA-${NV_VERSION} ]; then
+    mkdir ${DATA_DIR}/NVIDIA-${NV_VERSION}
 fi
 
 if [ ! -f /etc/modprobe.d/blacklist.conf ]; then
